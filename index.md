@@ -552,6 +552,6 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   }
 
   .rq-seg {
-    background-color: rgba(255, 204, 153, 0.5); /* Light orange, or choose another color if needed */
+    background-color: rgba(255, 247, 158, 0.5); /* Light orange, or choose another color if needed */
   }
 </style>
