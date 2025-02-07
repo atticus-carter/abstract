@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Include marked.js from a CDN for optional dynamic markdown rendering (if needed) -->
+    <!-- Include marked.js from a CDN (if needed for dynamic markdown rendering) -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
-      /* Basic styling for a clean, Streamlit-like appearance */
+      /* Recommended background image: 1920x1080 */
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f0f2f6;
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-position: center;
         margin: 0;
         padding: 20px;
         color: #333;
@@ -18,13 +20,19 @@
       .container {
         max-width: 900px;
         margin: auto;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.95); /* white background with slight transparency */
         padding: 30px;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       }
       h1, h2, h3 {
         color: #444;
+      }
+      /* Banner image styling – recommended resolution for banner.png: 1200x300 */
+      .banner {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
       }
       /* Styling for the instructions container */
       #instructionsContainer {
@@ -69,7 +77,7 @@
       .output {
         margin-top: 30px;
         padding: 15px;
-        background-color: #e9ecef;
+        background-color: #fff; /* white background for output */
         border-radius: 4px;
         white-space: pre-wrap;
       }
@@ -78,10 +86,24 @@
         font-weight: bold;
         margin-top: 10px;
       }
+      /* Highlighting styles for segments */
+      .segment {
+        padding: 2px 4px;
+        border-radius: 3px;
+      }
+      .and-seg { background-color: #ffe6e6; }       /* light red */
+      .but-seg { background-color: #e6ffe6; }       /* light green */
+      .rq-seg { background-color: #e6e6ff; }        /* light blue */
+      .therefore-seg { background-color: #fff0e6; } /* light orange */
+      .methodology-seg { background-color: #e6f7ff; } /* light cyan */
+      .findings-seg { background-color: #f0e6ff; }    /* light purple */
+      .implications-seg { background-color: #f9e6ff; }/* light pink/purple */
+      .role-seg { background-color: #e6fff9; }        /* light teal */
     </style>
   </head>
   <body>
     <div class="container">
+      <img src="banner.png" alt="Banner" class="banner">
       {{ content }}
     </div>
   </body>
