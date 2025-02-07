@@ -66,7 +66,7 @@ Use this structure as a guide to create a compelling narrative that logically co
 - Explain why these findings matter: the impact on the field, implications for future work, or why the research is significant.
 
 <details>
-  <summary><strong>Final Checklist Before Submission:</strong></summary>
+  <summary><strong>Final Checklist Before Submission (click to expand):</strong></summary>
 
 - [ ] Title is in title case.
 - [ ] All genus and species names are formatted correctly.
@@ -87,10 +87,9 @@ Use this structure as a guide to create a compelling narrative that logically co
 
 ### Your Task:
 Using the **“And, But, Therefore”** framework and the criteria listed above, draft a single-paragraph abstract (300 words or less) for your research project. Remember to:
-
-- Start with a background statement (**AND**),
-- Introduce the research gap (**BUT**),
-- And then state your research purpose or action (**THEREFORE**).
+- Start with a background statement,
+- Introduce the research gap,
+- And then state your research purpose or action.
 
 **Example Structure:**  
 “CO₂ is increasing in the atmosphere **AND** leads to ocean acidification **BUT** little is known about species’ capacity to evolve in response to pH stress. **THEREFORE,** we conducted this study to [state your research objective].”
@@ -103,14 +102,14 @@ Fill in your specific research details following this pattern.
   <label for="title">Title (in Title Case):</label>
   <input type="text" id="title" name="title" placeholder="Enter your title" required>
   
-  <label for="and">Background/Context (AND):</label>
+  <label for="and">Background/Context:</label>
   <textarea id="and" name="and" placeholder="e.g., CO₂ is increasing in the atmosphere" required></textarea>
   
-  <label for="but">Research Gap (BUT):</label>
+  <label for="but">Research Gap:</label>
   <textarea id="but" name="but" placeholder="e.g., leads to ocean acidification, but little is known about species' capacity to evolve in response to pH stress" required></textarea>
   
-  <label for="therefore">Research Objective (THEREFORE):</label>
-  <textarea id="therefore" name="therefore" placeholder="e.g., therefore, we conducted this study to assess..." required></textarea>
+  <label for="therefore">Research Objective:</label>
+  <textarea id="therefore" name="therefore" placeholder="e.g., we conducted this study to assess..." required></textarea>
   
   <label for="researchQuestion">Research Question/Hypotheses:</label>
   <textarea id="researchQuestion" name="researchQuestion" placeholder="State your research question, hypothesis, or goal" required></textarea>
@@ -129,16 +128,34 @@ Fill in your specific research details following this pattern.
   
   <button type="button" onclick="generateAbstract()">Generate Abstract</button>
   <button type="button" onclick="toggleHighlight()">Toggle Segment Highlighting</button>
+  <button type="button" onclick="copyToClipboard()">Copy to Clipboard</button>
 </form>
 
 <div id="output" class="output"></div>
 <div id="wordCount" class="output"></div>
 <div id="warning" class="warning"></div>
 
+<!-- Additional Criteria Section -->
+<h2>Abstract Criteria & Checklist</h2>
+
+<ul>
+  <li><strong>Text Formatting:</strong> Title in title case, properly formatted genus/species names, no extra spaces.</li>
+  <li><strong>Abstract Inclusions:</strong> A single paragraph with minimal-to-no citations.</li>
+  <li><strong>Spelling &amp; Punctuation:</strong> No spelling or punctuation errors; acronyms defined after first use.</li>
+  <li><strong>Present or Past Tense:</strong> Use present or past tense in methods; avoid “will be” statements.</li>
+  <li><strong>Role in Research:</strong> Use active voice and explicitly state your personal contributions.</li>
+  <li><strong>Context or Purpose:</strong> Provide a clear statement of purpose with background context.</li>
+  <li><strong>Questions/Hypotheses:</strong> Clearly state your research question, hypothesis, or goal.</li>
+  <li><strong>Methodology/Approach:</strong> Describe your methodology, including measurements, tools, and participant demographics (if applicable).</li>
+  <li><strong>Expected/Preliminary Findings:</strong> Indicate anticipated or preliminary findings if the project is in progress.</li>
+  <li><strong>Implications:</strong> Explain why these findings matter and their impact on the field or future work.</li>
+  <li><strong>Length:</strong> The abstract must be 300 words or less.</li>
+</ul>
+
 <script>
   let highlightEnabled = false;
   
-  // Simple check to see if each word in the title begins with an uppercase letter
+  // Check if each word in the title begins with an uppercase letter.
   function isTitleCase(str) {
     const words = str.split(' ');
     for (let word of words) {
@@ -151,7 +168,7 @@ Fill in your specific research details following this pattern.
   }
   
   function generateAbstract() {
-    // Retrieve and trim input values
+    // Retrieve and trim input values.
     const title = document.getElementById('title').value.trim();
     const andText = document.getElementById('and').value.trim();
     const butText = document.getElementById('but').value.trim();
@@ -163,38 +180,25 @@ Fill in your specific research details following this pattern.
     const role = document.getElementById('role').value.trim();
     
     let warnings = "";
-    // Check if title is in title case
     if (!isTitleCase(title)) {
       warnings += "Warning: Title is not in title case.\n";
     }
     
-    // Build individual segments
-    const segTitle = title;
-    const segAnd = andText;
-    const segBut = butText;
-    const segRQ = researchQuestion;
-    const segTherefore = thereforeText;
-    const segMethodology = methodology;
-    const segFindings = findings;
-    const segImplications = implications;
-    const segRole = role;
-    
-    // Build plain abstract string (for word count and non-highlighted view)
-    let plainAbstract = `${segTitle}\n\n${segAnd} AND ${segBut}. ${segRQ}. THEREFORE, ${segTherefore}. ${segMethodology}. ${segFindings}. ${segImplications}. ${segRole}.`;
+    // Build abstract without connector words.
+    let plainAbstract = `${title}\n\n${andText}. ${butText}. ${researchQuestion}. ${thereforeText}. ${methodology}. ${findings}. ${implications}. ${role}.`;
     plainAbstract = plainAbstract.replace(/\s+/g, ' ').trim();
     
-    // Build highlighted abstract with spans for each segment
-    let highlightedAbstract = `${segTitle}<br><br>`;
-    highlightedAbstract += `<span class="segment and-seg" title="Background/Context (AND)">${segAnd}</span> AND `;
-    highlightedAbstract += `<span class="segment but-seg" title="Research Gap (BUT)">${segBut}</span>. `;
-    highlightedAbstract += `<span class="segment rq-seg" title="Research Question/Hypotheses">${segRQ}</span>. `;
-    highlightedAbstract += `THEREFORE, <span class="segment therefore-seg" title="Research Objective (THEREFORE)">${segTherefore}</span>. `;
-    highlightedAbstract += `<span class="segment methodology-seg" title="Methodology/Approach">${segMethodology}</span>. `;
-    highlightedAbstract += `<span class="segment findings-seg" title="Expected/Preliminary Findings">${segFindings}</span>. `;
-    highlightedAbstract += `<span class="segment implications-seg" title="Implications">${segImplications}</span>. `;
-    highlightedAbstract += `<span class="segment role-seg" title="Role in Research">${segRole}</span>.`;
+    // Build highlighted abstract with spans.
+    let highlightedAbstract = `${title}<br><br>`;
+    highlightedAbstract += `<span class="segment and-seg" title="Background/Context">${andText}</span>. `;
+    highlightedAbstract += `<span class="segment but-seg" title="Research Gap">${butText}</span>. `;
+    highlightedAbstract += `<span class="segment rq-seg" title="Research Question/Hypotheses">${researchQuestion}</span>. `;
+    highlightedAbstract += `<span class="segment therefore-seg" title="Research Objective">${thereforeText}</span>. `;
+    highlightedAbstract += `<span class="segment methodology-seg" title="Methodology/Approach">${methodology}</span>. `;
+    highlightedAbstract += `<span class="segment findings-seg" title="Expected/Preliminary Findings">${findings}</span>. `;
+    highlightedAbstract += `<span class="segment implications-seg" title="Implications">${implications}</span>. `;
+    highlightedAbstract += `<span class="segment role-seg" title="Role in Research">${role}</span>.`;
     
-    // Choose which abstract to display based on the toggle state
     let finalAbstract, finalOutput;
     if (highlightEnabled) {
       finalAbstract = highlightedAbstract;
@@ -204,10 +208,8 @@ Fill in your specific research details following this pattern.
       finalOutput = finalAbstract.replace(/\n/g, '<br>');
     }
     
-    // Calculate word count using the plain abstract
     const wordCount = plainAbstract.split(/\s+/).length;
     
-    // Display the generated abstract, word count, and warnings if any
     document.getElementById('output').innerHTML = "<strong>Final Abstract:</strong><br>" + finalOutput;
     document.getElementById('wordCount').innerText = "Word Count: " + wordCount;
     document.getElementById('warning').innerText = warnings + (wordCount > 300 ? "Warning: Your abstract exceeds 300 words!" : "");
@@ -216,5 +218,14 @@ Fill in your specific research details following this pattern.
   function toggleHighlight() {
     highlightEnabled = !highlightEnabled;
     generateAbstract();
+  }
+  
+  function copyToClipboard() {
+    const text = document.getElementById('output').innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Abstract copied to clipboard!");
+    }).catch(err => {
+      alert("Error copying to clipboard: " + err);
+    });
   }
 </script>
