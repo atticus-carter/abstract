@@ -4,10 +4,6 @@ title: Abstract Writing Exercise: Crafting Your Research Narrative
 ---
 
 <div id="instructionsContainer">
-<!--
-Since Jekyll automatically renders Markdown, the instructions below will be
-converted to HTML. You can remove this comment block if you like.
--->
 </div>
 
 # Abstract Writing Exercise: Crafting Your Research Narrative
@@ -47,7 +43,7 @@ Use this structure as a guide to create a compelling narrative that logically co
 
 ### 4. Present or Past Tense
 - Use present or past tense in the Methods section.
-- Avoid “will be” statements (e.g., “I will be conducting…”) in the Background and Methodology.  
+- Avoid “will be” statements (e.g., “I will be conducting…”) in the Background and Methodology.
   (See the abstract writing workshop examples for further clarification.)
 
 ### 5. Role in Research
@@ -69,21 +65,9 @@ Use this structure as a guide to create a compelling narrative that logically co
 ### 10. Implications
 - Explain why these findings matter: the impact on the field, implications for future work, or why the research is significant.
 
-## Writing Your Abstract
+<details>
+  <summary><strong>Final Checklist Before Submission:</strong></summary>
 
-### Your Task:
-Using the **“And, But, Therefore”** framework and the criteria listed above, draft a single-paragraph abstract (300 words or less) for your research project. Remember to:
-
-- Start with a background statement (**AND**),
-- Introduce the research gap (**BUT**),
-- And then state your research purpose or action (**THEREFORE**).
-
-**Example Structure:**  
-“CO₂ is increasing in the atmosphere **AND** leads to ocean acidification **BUT** little is known about species’ capacity to evolve in response to pH stress. **THEREFORE,** we conducted this study to [state your research objective].”
-
-Fill in your specific research details following this pattern. Be sure to check off each guideline as you draft your abstract.
-
-## Final Checklist Before Submission:
 - [ ] Title is in title case.
 - [ ] All genus and species names are formatted correctly.
 - [ ] No extra spaces at the beginning of the title or abstract.
@@ -97,15 +81,21 @@ Fill in your specific research details following this pattern. Be sure to check 
 - [ ] Expected or preliminary findings are mentioned if applicable.
 - [ ] The significance and implications of your findings are explained.
 - [ ] The abstract is 300 words or less.
+</details>
 
-## Notes:
-- If you do not yet have a complete paper, focus on drafting an abstract that outlines your research idea using the provided framework.
-- Review previous accepted abstract examples (link or repository) for additional guidance.
+## Writing Your Abstract
 
-Happy writing!  
-If you have any questions or need further clarification, please refer to our workshop materials or contact the instructor.
+### Your Task:
+Using the **“And, But, Therefore”** framework and the criteria listed above, draft a single-paragraph abstract (300 words or less) for your research project. Remember to:
 
----
+- Start with a background statement (**AND**),
+- Introduce the research gap (**BUT**),
+- And then state your research purpose or action (**THEREFORE**).
+
+**Example Structure:**  
+“CO₂ is increasing in the atmosphere **AND** leads to ocean acidification **BUT** little is known about species’ capacity to evolve in response to pH stress. **THEREFORE,** we conducted this study to [state your research objective].”
+
+Fill in your specific research details following this pattern.
 
 <!-- Interactive Abstract Builder Form -->
 
@@ -138,6 +128,7 @@ If you have any questions or need further clarification, please refer to our wor
   <textarea id="role" name="role" placeholder="Explain your personal contributions to the project" required></textarea>
   
   <button type="button" onclick="generateAbstract()">Generate Abstract</button>
+  <button type="button" onclick="toggleHighlight()">Toggle Segment Highlighting</button>
 </form>
 
 <div id="output" class="output"></div>
@@ -145,43 +136,85 @@ If you have any questions or need further clarification, please refer to our wor
 <div id="warning" class="warning"></div>
 
 <script>
-function generateAbstract() {
-  // Retrieve and trim input values
-  const title = document.getElementById('title').value.trim();
-  const andText = document.getElementById('and').value.trim();
-  const butText = document.getElementById('but').value.trim();
-  const thereforeText = document.getElementById('therefore').value.trim();
-  const researchQuestion = document.getElementById('researchQuestion').value.trim();
-  const methodology = document.getElementById('methodology').value.trim();
-  const findings = document.getElementById('findings').value.trim();
-  const implications = document.getElementById('implications').value.trim();
-  const role = document.getElementById('role').value.trim();
+  let highlightEnabled = false;
   
-  // Build the abstract using the “And, But, Therefore” narrative
-  let abstractBody = "";
-  abstractBody += `${andText} AND ${butText}. `;
-  abstractBody += `${researchQuestion}. `;
-  abstractBody += `THEREFORE, ${thereforeText}. `;
-  abstractBody += `${methodology}. ${findings}. ${implications}. ${role}.`;
-  
-  // Combine title and abstract body into a single paragraph
-  let finalAbstract = `${title}\n\n${abstractBody}`;
-  
-  // Remove extra whitespace and ensure a single space between words
-  finalAbstract = finalAbstract.replace(/\s+/g, ' ').trim();
-  
-  // Calculate word count
-  const wordCount = finalAbstract.split(/\s+/).length;
-  
-  // Display the generated abstract and word count
-  document.getElementById('output').innerText = "Final Abstract:\n" + finalAbstract;
-  document.getElementById('wordCount').innerText = "Word Count: " + wordCount;
-  
-  // Warn if the abstract exceeds 300 words
-  if (wordCount > 300) {
-    document.getElementById('warning').innerText = "Warning: Your abstract exceeds 300 words!";
-  } else {
-    document.getElementById('warning').innerText = "";
+  // Simple check to see if each word in the title begins with an uppercase letter
+  function isTitleCase(str) {
+    const words = str.split(' ');
+    for (let word of words) {
+      if (word.length === 0) continue;
+      if (word[0] !== word[0].toUpperCase()) {
+        return false;
+      }
+    }
+    return true;
   }
-}
+  
+  function generateAbstract() {
+    // Retrieve and trim input values
+    const title = document.getElementById('title').value.trim();
+    const andText = document.getElementById('and').value.trim();
+    const butText = document.getElementById('but').value.trim();
+    const thereforeText = document.getElementById('therefore').value.trim();
+    const researchQuestion = document.getElementById('researchQuestion').value.trim();
+    const methodology = document.getElementById('methodology').value.trim();
+    const findings = document.getElementById('findings').value.trim();
+    const implications = document.getElementById('implications').value.trim();
+    const role = document.getElementById('role').value.trim();
+    
+    let warnings = "";
+    // Check if title is in title case
+    if (!isTitleCase(title)) {
+      warnings += "Warning: Title is not in title case.\n";
+    }
+    
+    // Build individual segments
+    const segTitle = title;
+    const segAnd = andText;
+    const segBut = butText;
+    const segRQ = researchQuestion;
+    const segTherefore = thereforeText;
+    const segMethodology = methodology;
+    const segFindings = findings;
+    const segImplications = implications;
+    const segRole = role;
+    
+    // Build plain abstract string (for word count and non-highlighted view)
+    let plainAbstract = `${segTitle}\n\n${segAnd} AND ${segBut}. ${segRQ}. THEREFORE, ${segTherefore}. ${segMethodology}. ${segFindings}. ${segImplications}. ${segRole}.`;
+    plainAbstract = plainAbstract.replace(/\s+/g, ' ').trim();
+    
+    // Build highlighted abstract with spans for each segment
+    let highlightedAbstract = `${segTitle}<br><br>`;
+    highlightedAbstract += `<span class="segment and-seg" title="Background/Context (AND)">${segAnd}</span> AND `;
+    highlightedAbstract += `<span class="segment but-seg" title="Research Gap (BUT)">${segBut}</span>. `;
+    highlightedAbstract += `<span class="segment rq-seg" title="Research Question/Hypotheses">${segRQ}</span>. `;
+    highlightedAbstract += `THEREFORE, <span class="segment therefore-seg" title="Research Objective (THEREFORE)">${segTherefore}</span>. `;
+    highlightedAbstract += `<span class="segment methodology-seg" title="Methodology/Approach">${segMethodology}</span>. `;
+    highlightedAbstract += `<span class="segment findings-seg" title="Expected/Preliminary Findings">${segFindings}</span>. `;
+    highlightedAbstract += `<span class="segment implications-seg" title="Implications">${segImplications}</span>. `;
+    highlightedAbstract += `<span class="segment role-seg" title="Role in Research">${segRole}</span>.`;
+    
+    // Choose which abstract to display based on the toggle state
+    let finalAbstract, finalOutput;
+    if (highlightEnabled) {
+      finalAbstract = highlightedAbstract;
+      finalOutput = finalAbstract;
+    } else {
+      finalAbstract = plainAbstract;
+      finalOutput = finalAbstract.replace(/\n/g, '<br>');
+    }
+    
+    // Calculate word count using the plain abstract
+    const wordCount = plainAbstract.split(/\s+/).length;
+    
+    // Display the generated abstract, word count, and warnings if any
+    document.getElementById('output').innerHTML = "<strong>Final Abstract:</strong><br>" + finalOutput;
+    document.getElementById('wordCount').innerText = "Word Count: " + wordCount;
+    document.getElementById('warning').innerText = warnings + (wordCount > 300 ? "Warning: Your abstract exceeds 300 words!" : "");
+  }
+  
+  function toggleHighlight() {
+    highlightEnabled = !highlightEnabled;
+    generateAbstract();
+  }
 </script>
