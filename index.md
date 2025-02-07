@@ -379,7 +379,8 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
 <!-- START OF ANNOTATED EXAMPLE ABSTRACT SECTION -->
 <h2>Annotated Example Abstract</h2>
 <div class="annotated-abstract">
-    <p>Below is an example of an annotated abstract, broken down into its components and explained using the "And, But, Therefore" framework. This example is based on the paper: <strong>“Feeding Preferences and the Effect of Temperature on Feeding Rates of the Graceful Kelp Crab, <em>Pugettia gracilis</em>” (Johnson et al., 2023)</strong></p>
+    <p>Below is an example of an annotated abstract, broken down into its components and explained using the "And, But, Therefore" framework. This example is based on the paper: <strong>“Feeding Preferences and the Effect of Temperature on Feeding Rates of the Graceful Kelp Crab, <em>Pugettia gracilis</em>” (Johnson et al., 2023)</strong><br>
+    <span style="font-size: 0.9em; color: #777;">By Katrina H. Johnson, Katie A. Dobkowski, Sasha K. Seroy, Shelby Fox, Natalie Meenan</span></p>
 
     <p><span class="segment title-seg">Feeding Preferences and the Effect of Temperature on Feeding Rates of the Graceful Kelp Crab, <em>Pugettia gracilis</em> (Johnson et al., 2023)</span></p>
     <p class="annotation"><strong>Title:</strong>  The title is concise and informative, following APA title case. It immediately tells the reader the topic, the organism, and the variables investigated.</p>
@@ -521,30 +522,30 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   }
 
   .title-seg {
-    background-color: #ADD8E6; /* Light Blue for Title */
+    background-color: rgba(144, 76, 119, 0.5); /* 904C77 at 50% transparency */
   }
 
   .and-seg {
-    background-color: #90EE90; /* Light Green for AND */
+    background-color: rgba(186, 115, 148, 0.5); /* BA7394 at 50% transparency */
   }
 
   .but-seg {
-    background-color: #FFDAB9; /* Peach for BUT */
+    background-color: rgba(228, 154, 176, 0.5); /* E49AB0 at 50% transparency */
   }
 
   .therefore-seg {
-    background-color: #DDA0DD; /* Plum for THEREFORE */
+    background-color: rgba(236, 184, 165, 0.5); /* ECB8A5 at 50% transparency */
   }
 
   .methodology-seg {
-    background-color: #FFFFE0; /* Light Yellow for Methodology */
+    background-color: rgba(236, 207, 195, 0.5); /* ECCFC3 at 50% transparency */
   }
 
   .findings-seg {
-    background-color: #E0FFFF; /* Light Cyan for Findings */
+    background-color: rgba(193, 166, 172, 0.5); /* C1A6AC at 50% transparency */
   }
 
   .implications-seg {
-    background-color: #F0E68C; /* Khaki for Implications */
+    background-color: rgba(171, 146, 161, 0.5); /* AB92A1 at 50% transparency */
   }
 </style>
