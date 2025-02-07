@@ -380,12 +380,12 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
 <h2>Annotated Example Abstract</h2>
 <div class="annotated-abstract">
     <p>Below is an example of an annotated abstract, broken down into its components and explained using the "And, But, Therefore" framework. This example is based on the paper: <strong>“Feeding Preferences and the Effect of Temperature on Feeding Rates of the Graceful Kelp Crab, <em>Pugettia gracilis</em>” (Johnson et al., 2023)</strong><br>
-    <span style="font-size: 0.9em; color: #777;">By Katrina H. Johnson, Katie A. Dobkowski, Sasha K. Seroy, Shelby Fox, Natalie Meenan</span></p>
+    <span style="font-size: 0.9em; color: #777;">By Katrina H. Johnson, Katie A. Dobkowski, Sasha K. Seroy, Shelby Fox, Natalie Meenan</span><br><a href="https://doi.org/10.7717/peerj.15223" target="_blank">https://doi.org/10.7717/peerj.15223</a></p>
 
     <p><span class="segment title-seg">Feeding Preferences and the Effect of Temperature on Feeding Rates of the Graceful Kelp Crab, <em>Pugettia gracilis</em> (Johnson et al., 2023)</span></p>
     <p class="annotation"><strong>Title:</strong>  The title is concise and informative, following APA title case. It immediately tells the reader the topic, the organism, and the variables investigated.</p>
 
-    <p><span class="segment and-seg">Graceful kelp crabs (<em>Pugettia gracilis</em>) are abundant consumers in shallow subtidal ecosystems of the Salish Sea. These dynamic habitats are currently experiencing multiple changes including invasion by non-native seaweeds and ocean warming.</span> <span class="segment but-seg">However, little is known about <em>P. gracilis</em>’ foraging ecology,</span> <span class="segment therefore-seg">therefore we investigated their feeding preferences between native and invasive food sources, as well as feeding rates at elevated temperatures to better assess their role in changing coastal food webs.</span> <span class="segment methodology-seg">To quantify crab feeding preferences, we collected <em>P. gracilis</em> from San Juan Island, WA and conducted no-choice and choice experiments with two food sources: the native kelp, <em>Nereocystis luetkeana</em>, and the invasive seaweed, <em>Sargassum muticum</em>. In no-choice experiments, <em>P. gracilis</em> ate equal amounts of <em>N. luetkeana</em> and <em>S. muticum</em>. However, in choice experiments, <em>P. gracilis</em> preferred <em>N. luetkeana</em> over <em>S. muticum</em>. To test effects of temperature on these feeding rates, we exposed <em>P. gracilis</em> to ambient (11.5 ± 1.3 °C) or elevated (19.5 ± 1.8 °C) temperature treatments and measured consumption of the preferred food type, <em>N. luetkeana</em>.</span> <span class="segment findings-seg">Crabs exposed to elevated temperatures ate significantly more than those in the ambient treatment.</span> <span class="segment implications-seg">Our study demonstrates the diet flexibility of <em>P. gracilis</em>, suggesting they may be able to exploit increasing populations of invasive <em>S. muticum</em> in the Salish Sea. Warming ocean temperatures may also prompt <em>P. gracilis</em> to increase feeding, exacerbating harmful impacts on <em>N. luetkeana</em>, which is already vulnerable to warming and invasive competitors.</span></p>
+    <p><span class="segment and-seg">Graceful kelp crabs (<em>Pugettia gracilis</em>) are abundant consumers in shallow subtidal ecosystems of the Salish Sea. These dynamic habitats are currently experiencing multiple changes including invasion by non-native seaweeds and ocean warming.</span><span class="segment but-seg">However, little is known about <em>P. gracilis</em>’ foraging ecology,</span><span class="segment therefore-seg">therefore we investigated their feeding preferences between native and invasive food sources, as well as feeding rates at elevated temperatures to better assess their role in changing coastal food webs.</span><span class="segment methodology-seg">To quantify crab feeding preferences, we collected <em>P. gracilis</em> from San Juan Island, WA and conducted no-choice and choice experiments with two food sources: the native kelp, <em>Nereocystis luetkeana</em>, and the invasive seaweed, <em>Sargassum muticum</em>. In no-choice experiments, <em>P. gracilis</em> ate equal amounts of <em>N. luetkeana</em> and <em>S. muticum</em>. However, in choice experiments, <em>P. gracilis</em> preferred <em>N. luetkeana</em> over <em>S. muticum</em>. To test effects of temperature on these feeding rates, we exposed <em>P. gracilis</em> to ambient (11.5 ± 1.3 °C) or elevated (19.5 ± 1.8 °C) temperature treatments and measured consumption of the preferred food type, <em>N. luetkeana</em>.</span><span class="segment findings-seg">Crabs exposed to elevated temperatures ate significantly more than those in the ambient treatment.</span><span class="segment implications-seg">Our study demonstrates the diet flexibility of <em>P. gracilis</em>, suggesting they may be able to exploit increasing populations of invasive <em>S. muticum</em> in the Salish Sea. Warming ocean temperatures may also prompt <em>P. gracilis</em> to increase feeding, exacerbating harmful impacts on <em>N. luetkeana</em>, which is already vulnerable to warming and invasive competitors.</span></p>
 
     <p class="annotation and-seg"><strong>Background ("And"):</strong> This section sets the stage by introducing the organism and the broader context of their habitat. It highlights the ecological importance of graceful kelp crabs and the environmental changes their ecosystem is undergoing (invasion and warming). This establishes the relevance of studying this species.</p>
     <p class="annotation but-seg"><strong>Research Gap ("But"):</strong> This clearly states the knowledge gap: despite the importance of *P. gracilis*, little is known about their feeding ecology. This justifies the need for the research.</p>
@@ -447,17 +447,18 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
     }
 
     // Build the final abstract by concatenating the fields.
-    let plainAbstract = titleField + "\n\n" + bgText + " " + gapText + " " + rqText + " " + objText + " " + methText + " " + findingsText + " " + implText;
+    let plainAbstract = titleField + "\n\n" + bgText + gapText + rqText + objText + methText + findingsText + implText; // Removed spaces between segments
     plainAbstract = plainAbstract.replace(/\s+/g, ' ').trim();
 
     // Build a highlighted version.
     let highlightedAbstract = titleField + "<br><br>";
-    highlightedAbstract += "<span class='segment and-seg' title='Background/Context'>" + bgText + "</span> ";
-    highlightedAbstract += "<span class='segment but-seg' title='Research Gap'>" + gapText + "</span> ";
-    highlightedAbstract += "<span class='segment rq-seg' title='Research Question/Hypotheses'>" + rqText + "</span> ";
-    highlightedAbstract += "<span class='segment therefore-seg' title='Research Objective'>" + objText + "</span> ";
-    highlightedAbstract += "<span class='segment methodology-seg' title='Methodology/Approach'>" + methText + "</span> ";
-    highlightedAbstract += "<span class='segment findings-seg' title='Expected/Preliminary Findings'>" + findingsText + "</span> ";
+    highlightedAbstract += "<span class='segment title-seg' title='Title'>" + titleField + "</span>"; // Added title segment
+    highlightedAbstract += "<span class='segment and-seg' title='Background/Context'>" + bgText + "</span>";
+    highlightedAbstract += "<span class='segment but-seg' title='Research Gap'>" + gapText + "</span>";
+    highlightedAbstract += "<span class='segment rq-seg' title='Research Question/Hypotheses'>" + rqText + "</span>";
+    highlightedAbstract += "<span class='segment therefore-seg' title='Research Objective'>" + objText + "</span>";
+    highlightedAbstract += "<span class='segment methodology-seg' title='Methodology/Approach'>" + methText + "</span>";
+    highlightedAbstract += "<span class='segment findings-seg' title='Expected/Preliminary Findings'>" + findingsText + "</span>";
     highlightedAbstract += "<span class='segment implications-seg' title='Implications'>" + implText + "</span>";
 
     let finalAbstract, finalOutput;
@@ -519,33 +520,39 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
     padding: 2px 5px;
     border-radius: 3px;
     color: black; /* Default text color for segments */
+    margin-right: 0px; /* Removes space between segments if inline-block */
+    display: inline-block; /* Ensure segments are inline to avoid line breaks */
   }
 
   .title-seg {
-    background-color: rgba(144, 76, 119, 0.5); /* 904C77 at 50% transparency */
+    background-color: rgba(201, 161, 229, 0.5); /* #c9a1e5 at 50% transparency */
   }
 
   .and-seg {
-    background-color: rgba(186, 115, 148, 0.5); /* BA7394 at 50% transparency */
+    background-color: rgba(218, 194, 242, 0.5); /* #dac2f2 at 50% transparency */
   }
 
   .but-seg {
-    background-color: rgba(228, 154, 176, 0.5); /* E49AB0 at 50% transparency */
+    background-color: rgba(144, 217, 130, 0.5); /* #90d982 at 50% transparency */
   }
 
   .therefore-seg {
-    background-color: rgba(236, 184, 165, 0.5); /* ECB8A5 at 50% transparency */
+    background-color: rgba(66, 166, 66, 0.5); /* #42a642 at 50% transparency */
   }
 
   .methodology-seg {
-    background-color: rgba(236, 207, 195, 0.5); /* ECCFC3 at 50% transparency */
+    background-color: rgba(165, 105, 157, 0.5); /* #a5699d at 50% transparency */
   }
 
   .findings-seg {
-    background-color: rgba(193, 166, 172, 0.5); /* C1A6AC at 50% transparency */
+    background-color: rgba(173, 183, 172, 0.5); /* #adb7ac at 50% transparency */
   }
 
   .implications-seg {
-    background-color: rgba(171, 146, 161, 0.5); /* AB92A1 at 50% transparency */
+    background-color: rgba(122, 140, 108, 0.5); /* #7a8c6c at 50% transparency */
+  }
+
+  .rq-seg {
+    background-color: rgba(255, 204, 153, 0.5); /* Light orange, or choose another color if needed */
   }
 </style>
