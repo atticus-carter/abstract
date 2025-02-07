@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Optional: marked.js if you need dynamic markdown rendering -->
+    <!-- Optional: marked.js if needed -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
-      /* Fixed, stationary background image */
+      /* Fixed, full-screen background image */
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-image: url('background.jpg');
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
@@ -92,11 +92,11 @@
       .methodology-seg { background-color: #e6f7ff; }
       .findings-seg { background-color: #f0e6ff; }
       .implications-seg { background-color: #f9e6ff; }
-      .role-seg { background-color: #e6fff9; }
     </style>
   </head>
   <body>
     <div class="container">
+      <!-- Banner with title image -->
       <img src="banner.png" alt="Banner" class="banner">
       {{ content }}
     </div>
