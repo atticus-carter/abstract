@@ -53,22 +53,22 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
       This field should start with a hook. Although we suggest "And:" to introduce background information, feel free to use alternatives (e.g., "Additionally," "Furthermore,").
     </p>
     <p>
-      “And: Identifying climatic drivers of an animal population's vital rates steers conservation efforts to optimize species recovery.”  
+      “Identifying climatic drivers of an animal population's vital rates steers conservation efforts to optimize species recovery.”  
       (Butler et al., 2017)  
       <a href="https://doi.org/10.1002/ece3.2892" target="_blank">[Link]</a>
     </p>
     <p>
-      “And: Graceful kelp crabs (Pugettia gracilis) are abundant consumers in shallow subtidal ecosystems experiencing invasion by non-native seaweeds and ocean warming.”  
+      “Graceful kelp crabs (Pugettia gracilis) are abundant consumers in shallow subtidal ecosystems experiencing invasion by non-native seaweeds and ocean warming.”  
       (Johnson et al., 2023)  
       <a href="https://doi.org/10.7717/peerj.15223" target="_blank">[Link]</a>
     </p>
     <p>
-      “And: Fish communities inhabiting soft-sediment tidepools are representative conservation targets for coastal habitats.”  
+      “Fish communities inhabiting soft-sediment tidepools are representative conservation targets for coastal habitats.”  
       (Kunishima &amp; Tachihara, 2021)  
       <a href="https://doi.org/10.1016/j.marenvres.2021.105442" target="_blank">[Link]</a>
     </p>
     <p>
-      “And: By ameliorating environmental conditions, foundation species underpin the structure and function of tidepool communities.”  
+      “By ameliorating environmental conditions, foundation species underpin the structure and function of tidepool communities.”  
       (Shelton, 2010)  
       <a href="https://doi.org/10.1016/j.jembe.2010.06.003" target="_blank">[Link]</a>
     </p>
@@ -85,22 +85,22 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
       This field shows the gap in knowledge your research fills. You can start with "But:" or other similar cues.
     </p>
     <p>
-      “But: However, little is known about P. gracilis’ foraging ecology.”  
+      “However, little is known about P. gracilis’ foraging ecology.”  
       (Johnson et al., 2023)  
       <a href="https://doi.org/10.7717/peerj.15223" target="_blank">[Link]</a>
     </p>
     <p>
-      “But: The anthomedusa Sarsia tubulosa has long been considered a ‘variable’ species, yet recent observations reveal at least three species.”  
+      “The anthomedusa Sarsia tubulosa has long been considered a ‘variable’ species, yet recent observations reveal at least three species.”  
       (Miller, R., 1982)  
       <a href="https://doi.org/10.1016/0022-0981(82)90089-2" target="_blank">[Link]</a>
     </p>
     <p>
-      “But: Although fish communities in soft-sediment tidepools are conservation targets, how ecological functions drive diversity remains unknown.”  
+      “Although fish communities in soft-sediment tidepools are conservation targets, how ecological functions drive diversity remains unknown.”  
       (Kunishima &amp; Tachihara, 2021)  
       <a href="https://doi.org/10.1016/j.marenvres.2021.105442" target="_blank">[Link]</a>
     </p>
     <p>
-      “But: Despite rapid lionfish invasion, genetic connectivity among MPAs is still unclear.”  
+      “Despite rapid lionfish invasion, genetic connectivity among MPAs is still unclear.”  
       (Guzmán‐Méndez et al., 2020)  
       <a href="https://doi.org/10.3389/fmars.2019.00403" target="_blank">[Link]</a>
     </p>
@@ -114,30 +114,30 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   </label>
   <div id="exampleObjective" class="example" style="display:none; margin:5px 0 10px 20px; border-left: 2px solid #9370DB; padding-left: 10px;">
     <p>
-      This field describes how you fill the research gap. Use a cue word like "Therefore:" (alternatives are acceptable).
+      This field describes how you fill the research gap. Use a cue word like "Therefore:" (alternatives are acceptable). Sometimes it works well to write with the cue first, and delete it later to make it flow better! :)
     </p>
     <p>
-      “Therefore: We identify climatic drivers of whooping crane recruitment throughout the species’ life cycle.”  
+      “We identify climatic drivers of whooping crane recruitment throughout the species’ life cycle.”  
       (Butler et al., 2017)  
       <a href="https://doi.org/10.1002/ece3.2892" target="_blank">[Link]</a>
     </p>
     <p>
-      “Therefore: We investigated feeding preferences between native and invasive food sources, as well as feeding rates at elevated temperatures.”  
+      “We investigated feeding preferences between native and invasive food sources, as well as feeding rates at elevated temperatures.”  
       (Johnson et al., 2023)  
       <a href="https://doi.org/10.7717/peerj.15223" target="_blank">[Link]</a>
     </p>
     <p>
-      “Therefore: To examine the ecological functions of soft-sediment tidepools according to topographical types on Okinawa-jima Island.”  
+      “To examine the ecological functions of soft-sediment tidepools according to topographical types on Okinawa-jima Island.”  
       (Kunishima &amp; Tachihara, 2021)  
       <a href="https://doi.org/10.1016/j.marenvres.2021.105442" target="_blank">[Link]</a>
     </p>
     <p>
-      “Therefore: To assess how the removal of surfgrass affects the thermal environment and community structure in tidepools.”  
+      “To assess how the removal of surfgrass affects the thermal environment and community structure in tidepools.”  
       (Shelton, 2010)  
       <a href="https://doi.org/10.1016/j.jembe.2010.06.003" target="_blank">[Link]</a>
     </p>
     <p>
-      “Therefore: To identify genetic connectivity among MPAs in the Gulf of Mexico and Caribbean Sea using microsatellite analysis.”  
+      “To identify genetic connectivity among MPAs in the Gulf of Mexico and Caribbean Sea using microsatellite analysis.”  
       (Guzmán‐Méndez et al., 2020)  
       <a href="https://doi.org/10.3389/fmars.2019.00403" target="_blank">[Link]</a>
     </p>
