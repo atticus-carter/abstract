@@ -29,7 +29,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
     </p>
     <p>
       “Are Whooping Cranes Destined for Extinction? Climate Change Imperils Recruitment and Population Growth”
-      (Butler, M., Metzger, K., &amp; Harris, G., 2017)
+      (Butler, M., Metzger, K., & Harris, G., 2017)
       <a href="https://doi.org/10.1002/ece3.2892" target="_blank">[Link]</a>
     </p>
     <p>
@@ -67,7 +67,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
     </p>
     <p>
       “Fish communities inhabiting soft-sediment tidepools are representative conservation targets for coastal habitats.”
-      (Kunishima &amp; Tachihara, 2021)
+      (Kunishima & Tachihara, 2021)
       <a href="https://doi.org/10.1016/j.marenvres.2021.105442" target="_blank">[Link]</a>
     </p>
     <p>
@@ -101,7 +101,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
     </p>
     <p>
       “Although fish communities in soft-sediment tidepools are conservation targets, how ecological functions drive diversity remains unknown.”
-      (Kunishima &amp; Tachihara, 2021)
+      (Kunishima & Tachihara, 2021)
       <a href="https://doi.org/10.1016/j.marenvres.2021.105442" target="_blank">[Link]</a>
     </p>
     <p>
@@ -135,7 +135,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
     </p>
     <p>
       “To examine the ecological functions of soft-sediment tidepools according to topographical types on Okinawa-jima Island.”
-      (Kunishima &amp; Tachihara, 2021)
+      (Kunishima & Tachihara, 2021)
       <a href="https://doi.org/10.1016/j.marenvres.2021.105442" target="_blank">[Link]</a>
     </p>
     <p>
@@ -240,7 +240,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
     </p>
     <p>
       “We observed an inverse trend in α- and β-diversity between topographic types, shaped by habitat heterogeneity.”
-      (Kunishima &amp; Tachihara, 2021)
+      (Kunishima & Tachihara, 2021)
       <a href="https://doi.org/10.1016/j.marenvres.2021.105442" target="_blank">[Link]</a>
     </p>
     <p>
@@ -326,7 +326,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   Use this structure as a guide to create a compelling narrative that connects your background, research gap, and objective.
 </p>
 
-<h2>Abstract Guidelines &amp; Criteria</h2>
+<h2>Abstract Guidelines & Criteria</h2>
 <ol>
   <li><strong>Text Formatting</strong>
     <br><em>Title:</em> Must be in APA title case format.
@@ -336,7 +336,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   <li><strong>Abstract Inclusions</strong>
     <br>The abstract must be a single paragraph with no headings. Include minimal-to-no citations.
   </li>
-  <li><strong>Spelling &amp; Punctuation</strong>
+  <li><strong>Spelling & Punctuation</strong>
     <br>Ensure there are no spelling or punctuation mistakes. Acronyms must be defined after their first use.
   </li>
   <li><strong>Present or Past Tense</strong>
@@ -375,6 +375,26 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   <strong>Example Structure:</strong><br>
   “CO₂ is increasing in the atmosphere and leads to ocean acidification, but little is known about species’ capacity to evolve in response to pH stress. Therefore, we conducted this study to [state your research objective].”
 </p>
+
+<!-- START OF ANNOTATED EXAMPLE ABSTRACT SECTION -->
+<h2>Annotated Example Abstract</h2>
+<div class="annotated-abstract">
+    <p>Below is an example of an annotated abstract, broken down into its components and explained using the "And, But, Therefore" framework. This example is based on the paper: <strong>“Feeding Preferences and the Effect of Temperature on Feeding Rates of the Graceful Kelp Crab, <em>Pugettia gracilis</em>” (Johnson et al., 2023)</strong></p>
+
+    <p><span class="segment title-seg">Feeding Preferences and the Effect of Temperature on Feeding Rates of the Graceful Kelp Crab, <em>Pugettia gracilis</em> (Johnson et al., 2023)</span></p>
+    <p class="annotation"><strong>Title:</strong>  The title is concise and informative, following APA title case. It immediately tells the reader the topic, the organism, and the variables investigated.</p>
+
+    <p><span class="segment and-seg">Graceful kelp crabs (<em>Pugettia gracilis</em>) are abundant consumers in shallow subtidal ecosystems of the Salish Sea. These dynamic habitats are currently experiencing multiple changes including invasion by non-native seaweeds and ocean warming.</span> <span class="segment but-seg">However, little is known about <em>P. gracilis</em>’ foraging ecology,</span> <span class="segment therefore-seg">therefore we investigated their feeding preferences between native and invasive food sources, as well as feeding rates at elevated temperatures to better assess their role in changing coastal food webs.</span> <span class="segment methodology-seg">To quantify crab feeding preferences, we collected <em>P. gracilis</em> from San Juan Island, WA and conducted no-choice and choice experiments with two food sources: the native kelp, <em>Nereocystis luetkeana</em>, and the invasive seaweed, <em>Sargassum muticum</em>. In no-choice experiments, <em>P. gracilis</em> ate equal amounts of <em>N. luetkeana</em> and <em>S. muticum</em>. However, in choice experiments, <em>P. gracilis</em> preferred <em>N. luetkeana</em> over <em>S. muticum</em>. To test effects of temperature on these feeding rates, we exposed <em>P. gracilis</em> to ambient (11.5 ± 1.3 °C) or elevated (19.5 ± 1.8 °C) temperature treatments and measured consumption of the preferred food type, <em>N. luetkeana</em>.</span> <span class="segment findings-seg">Crabs exposed to elevated temperatures ate significantly more than those in the ambient treatment.</span> <span class="segment implications-seg">Our study demonstrates the diet flexibility of <em>P. gracilis</em>, suggesting they may be able to exploit increasing populations of invasive <em>S. muticum</em> in the Salish Sea. Warming ocean temperatures may also prompt <em>P. gracilis</em> to increase feeding, exacerbating harmful impacts on <em>N. luetkeana</em>, which is already vulnerable to warming and invasive competitors.</span></p>
+
+    <p class="annotation and-seg"><strong>Background ("And"):</strong> This section sets the stage by introducing the organism and the broader context of their habitat. It highlights the ecological importance of graceful kelp crabs and the environmental changes their ecosystem is undergoing (invasion and warming). This establishes the relevance of studying this species.</p>
+    <p class="annotation but-seg"><strong>Research Gap ("But"):</strong> This clearly states the knowledge gap: despite the importance of *P. gracilis*, little is known about their feeding ecology. This justifies the need for the research.</p>
+    <p class="annotation therefore-seg"><strong>Research Objective ("Therefore"):</strong> This section clearly states the objectives of the study. The researchers aimed to investigate feeding preferences and the effect of temperature on feeding rates, directly addressing the identified research gap.</p>
+    <p class="annotation methodology-seg"><strong>Methodology/Approach:</strong> This section concisely describes the experimental methods used. It includes details about where the crabs were collected, the types of experiments (no-choice and choice), the food sources (native and invasive kelp), and the temperature treatments. It also summarizes key methodological findings within this section, streamlining the narrative.</p>
+    <p class="annotation findings-seg"><strong>Expected/Preliminary Findings:</strong> This section presents the key results of the study. It highlights the crab's feeding preferences in both no-choice and choice experiments, and the significant effect of temperature on feeding rates. These are the direct answers to the research questions.</p>
+    <p class="annotation implications-seg"><strong>Implications:</strong> This section explains the broader significance of the findings. It discusses the diet flexibility of the crabs in the context of invasive species and the potential for increased feeding rates due to warming waters to negatively impact native kelp. This connects the specific findings back to the larger ecological context introduced in the background and emphasizes the importance of the research.</p>
+</div>
+<!-- END OF ANNOTATED EXAMPLE ABSTRACT SECTION -->
+
 
 <script>
   // Toggle the display of an example block by ID.
@@ -472,3 +492,59 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   // Generate the abstract on page load, to ensure it's there initially.
   generateAbstract();
 </script>
+
+<style>
+  .annotated-abstract {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  .annotated-abstract p {
+    margin-bottom: 10px;
+  }
+
+  .annotation {
+    font-size: 0.9em;
+    color: #777;
+    margin-left: 20px;
+    border-left: 2px solid #ccc;
+    padding-left: 10px;
+  }
+
+  .segment {
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: black; /* Default text color for segments */
+  }
+
+  .title-seg {
+    background-color: #ADD8E6; /* Light Blue for Title */
+  }
+
+  .and-seg {
+    background-color: #90EE90; /* Light Green for AND */
+  }
+
+  .but-seg {
+    background-color: #FFDAB9; /* Peach for BUT */
+  }
+
+  .therefore-seg {
+    background-color: #DDA0DD; /* Plum for THEREFORE */
+  }
+
+  .methodology-seg {
+    background-color: #FFFFE0; /* Light Yellow for Methodology */
+  }
+
+  .findings-seg {
+    background-color: #E0FFFF; /* Light Cyan for Findings */
+  }
+
+  .implications-seg {
+    background-color: #F0E68C; /* Khaki for Implications */
+  }
+</style>
