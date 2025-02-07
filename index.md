@@ -410,6 +410,11 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   function generateAbstract() {
     const titleField = document.getElementById('title').value.trim();
 
+    // Get the text from the textareas without modification.
+    let bgText = document.getElementById('and').value.trim();
+    let gapText = document.getElementById('but').value.trim();
+    let objText = document.getElementById('therefore').value.trim();
+
     const rqText = document.getElementById('researchQuestion').value.trim();
     const methText = document.getElementById('methodology').value.trim();
     const findingsText = document.getElementById('findings').value.trim();
