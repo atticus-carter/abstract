@@ -410,23 +410,6 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   function generateAbstract() {
     const titleField = document.getElementById('title').value.trim();
 
-    // For these fields, if the text doesn't already begin with the suggested cue (ignoring case), add it.
-    let bgText = document.getElementById('and').value.trim();
-    if (!bgText.toLowerCase().startsWith("and:")) {
-      bgText = "And: " + bgText;
-    }
-
-    let gapText = document.getElementById('but').value.trim();
-    // Allow flexibility: the user may use "but", "yet", "however", etc.
-    if (!/^(but:|yet:|however:)/i.test(gapText)) {
-      gapText = "But: " + gapText;
-    }
-
-    let objText = document.getElementById('therefore').value.trim();
-    if (!objText.toLowerCase().startsWith("therefore:")) {
-      objText = "Therefore: " + objText;
-    }
-
     const rqText = document.getElementById('researchQuestion').value.trim();
     const methText = document.getElementById('methodology').value.trim();
     const findingsText = document.getElementById('findings').value.trim();
