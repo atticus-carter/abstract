@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Include marked.js from a CDN (if needed for dynamic markdown rendering) -->
+    <!-- Optional: marked.js if you need dynamic markdown rendering -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
-      /* Use a background image that is not zoomed in */
+      /* Fixed, stationary background image */
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-image: url('background.jpg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
+        background-attachment: fixed;
         margin: 0;
         padding: 20px;
         color: #333;
@@ -21,7 +22,7 @@
       .container {
         max-width: 900px;
         margin: auto;
-        background-color: rgba(255, 255, 255, 0.95); /* nearly white background */
+        background-color: rgba(255, 255, 255, 0.95);
         padding: 30px;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -29,19 +30,11 @@
       h1, h2, h3 {
         color: #444;
       }
-      /* Banner styling – recommended resolution: 1200x300 */
+      /* Banner styling – recommended: 1200x300 */
       .banner {
         width: 100%;
         height: auto;
         margin-bottom: 20px;
-      }
-      /* Styling for instructions container */
-      #instructionsContainer {
-        margin-bottom: 30px;
-        padding: 20px;
-        background-color: #eef5ff;
-        border-left: 5px solid #007BFF;
-        border-radius: 4px;
       }
       /* Form styling */
       form label {
@@ -78,7 +71,7 @@
       .output {
         margin-top: 30px;
         padding: 15px;
-        background-color: #fff; /* white background for the output area */
+        background-color: #fff;
         border-radius: 4px;
         white-space: pre-wrap;
       }
@@ -92,14 +85,14 @@
         padding: 2px 4px;
         border-radius: 3px;
       }
-      .and-seg { background-color: #ffe6e6; }       /* light red */
-      .but-seg { background-color: #e6ffe6; }       /* light green */
-      .rq-seg { background-color: #e6e6ff; }        /* light blue */
-      .therefore-seg { background-color: #fff0e6; } /* light orange */
-      .methodology-seg { background-color: #e6f7ff; } /* light cyan */
-      .findings-seg { background-color: #f0e6ff; }    /* light purple */
-      .implications-seg { background-color: #f9e6ff; }/* light pink/purple */
-      .role-seg { background-color: #e6fff9; }        /* light teal */
+      .and-seg { background-color: #ffe6e6; }
+      .but-seg { background-color: #e6ffe6; }
+      .rq-seg { background-color: #e6e6ff; }
+      .therefore-seg { background-color: #fff0e6; }
+      .methodology-seg { background-color: #e6f7ff; }
+      .findings-seg { background-color: #f0e6ff; }
+      .implications-seg { background-color: #f9e6ff; }
+      .role-seg { background-color: #e6fff9; }
     </style>
   </head>
   <body>
