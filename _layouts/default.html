@@ -7,12 +7,13 @@
     <!-- Include marked.js from a CDN (if needed for dynamic markdown rendering) -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
-      /* Recommended background image: 1920x1080 */
+      /* Use a background image that is not zoomed in */
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-image: url('background.jpg');
-        background-size: cover;
-        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
         margin: 0;
         padding: 20px;
         color: #333;
@@ -20,7 +21,7 @@
       .container {
         max-width: 900px;
         margin: auto;
-        background-color: rgba(255, 255, 255, 0.95); /* white background with slight transparency */
+        background-color: rgba(255, 255, 255, 0.95); /* nearly white background */
         padding: 30px;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -28,13 +29,13 @@
       h1, h2, h3 {
         color: #444;
       }
-      /* Banner image styling – recommended resolution for banner.png: 1200x300 */
+      /* Banner styling – recommended resolution: 1200x300 */
       .banner {
         width: 100%;
         height: auto;
         margin-bottom: 20px;
       }
-      /* Styling for the instructions container */
+      /* Styling for instructions container */
       #instructionsContainer {
         margin-bottom: 30px;
         padding: 20px;
@@ -77,7 +78,7 @@
       .output {
         margin-top: 30px;
         padding: 15px;
-        background-color: #fff; /* white background for output */
+        background-color: #fff; /* white background for the output area */
         border-radius: 4px;
         white-space: pre-wrap;
       }
