@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Abstract Writing Exercise: Crafting Your Research Narrative
+title: "Abstract Writing Exercise: Crafting Your Research Narrative"
 ---
 
 <!-- Interactive Abstract Generator Form -->
