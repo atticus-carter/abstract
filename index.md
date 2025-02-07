@@ -480,4 +480,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
       alert("Error copying to clipboard: " + err);
     });
   }
+
+  // Generate the abstract on page load, to ensure it's there initially.
+  generateAbstract();
 </script>
