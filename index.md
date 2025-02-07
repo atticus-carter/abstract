@@ -421,7 +421,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
       // Remove punctuation from the word for checking.
       let cleanWord = word.replace(/[^a-zA-Z]/g, '').toLowerCase();
       if (minorWords.includes(cleanWord)) continue;
-      if (word[0] !== word[0].toUpperCase()) return false;
+      if (word[0] !== word[0][0].toUpperCase()) return false;
     }
     return true;
   }
@@ -451,8 +451,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
     plainAbstract = plainAbstract.replace(/\s+/g, ' ').trim();
 
     // Build a highlighted version.
-    let highlightedAbstract = titleField + "<br><br>";
-    highlightedAbstract += "<span class='segment title-seg' title='Title'>" + titleField + "</span>"; // Added title segment
+    let highlightedAbstract = "<span class='segment title-seg' title='Title'>" + titleField + "</span><br><br>"; // Added title segment and moved to start
     highlightedAbstract += "<span class='segment and-seg' title='Background/Context'>" + bgText + "</span>";
     highlightedAbstract += "<span class='segment but-seg' title='Research Gap'>" + gapText + "</span>";
     highlightedAbstract += "<span class='segment rq-seg' title='Research Question/Hypotheses'>" + rqText + "</span>";
