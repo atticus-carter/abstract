@@ -3,50 +3,60 @@ layout: default
 title: "Abstract Writing Exercise: Crafting Your Research Narrative"
 ---
 
+<!-- Quick description at the top -->
+<p>
+  Welcome to the Abstract Writing Exercise website. This interactive tool helps you craft your research abstract by guiding you through the “And, But, Therefore” framework. Remember that an abstract:
+</p>
+<ul>
+  <li>Helps readers decide whether to read the full manuscript.</li>
+  <li>Must stand on its own.</li>
+  <li>Summarizes key points of the research.</li>
+  <li>Acts as a miniature version of your manuscript.</li>
+</ul>
+
 <!-- Interactive Abstract Generator Form -->
 <form id="abstractForm">
   <!-- TITLE FIELD -->
   <label for="title">
-    Title (in Title Case): 
-    <span class="learnMore" onclick="toggleExample('exampleTitle')">Learn More</span>
+    Title (in Title Case – the first word serves as a hook):
+    <span class="learnMore" onclick="toggleExample('exampleTitle')">examples</span>
   </label>
   <div id="exampleTitle" class="example" style="display:none; margin:5px 0 10px 20px; border-left: 2px solid #007BFF; padding-left: 10px;">
     <p>
-      <strong>Example 1:</strong> 
+      <strong>Example 1:</strong>
       <span title="Title must be in title case.">Are Whooping Cranes Destined for Extinction? Climate Change Imperils Recruitment and Population Growth</span>
       (Butler, M., Metzger, K., &amp; Harris, G., 2017)
       <a href="https://doi.org/10.1002/ece3.2892" target="_blank">[Link]</a>
     </p>
     <p>
-      <strong>Example 2:</strong> 
+      <strong>Example 2:</strong>
       <span title="Title must be in title case.">Feeding Preferences and the Effect of Temperature on Feeding Rates of the Graceful Kelp Crab, Pugettia gracilis</span>
-      (Johnson, K. H., Dobkowski, K. A., Seroy, S. K., Fox, S., &amp; Meenan, N., 2023)
+      (Johnson et al., 2023)
       <a href="https://doi.org/10.7717/peerj.15223" target="_blank">[Link]</a>
     </p>
     <p>
-      <strong>Example 3:</strong> 
+      <strong>Example 3:</strong>
       <span title="Title must be in title case.">Timing Is Everything: The Effect of Tidal Timing on Biodiversity During Heatwaves</span>
-      (Sanfilippo, J., Guthery, H., Pop, J., &amp; Eklund, B., 2023)
-      <!-- No DOI provided for this one -->
+      (Sanfilippo et al., 2023)
     </p>
   </div>
-  <input type="text" id="title" name="title" placeholder="Enter your title" required>
+  <input type="text" id="title" name="title" placeholder="Enter your title (the first word is your hook)" required>
   
   <!-- BACKGROUND/CONTEXT FIELD -->
   <label for="and">
-    Background/Context: 
-    <span class="learnMore" onclick="toggleExample('exampleBackground')">Learn More</span>
+    Background/Context (begin with "And:"):
+    <span class="learnMore" onclick="toggleExample('exampleBackground')">examples</span>
   </label>
   <div id="exampleBackground" class="example" style="display:none; margin:5px 0 10px 20px; border-left: 2px solid #007BFF; padding-left: 10px;">
     <p>
-      <strong>Example 1:</strong> 
-      “Identifying climatic drivers of an animal population's vital rates and locating where they operate steers conservation efforts to optimize species recovery.”
+      <strong>Example 1:</strong>
+      “And: Identifying climatic drivers of an animal population's vital rates steers conservation efforts to optimize species recovery.”
       (Butler et al., 2017)
       <a href="https://doi.org/10.1002/ece3.2892" target="_blank">[Link]</a>
     </p>
     <p>
-      <strong>Example 2:</strong> 
-      “Graceful kelp crabs (Pugettia gracilis) are abundant consumers in shallow subtidal ecosystems of the Salish Sea. These dynamic habitats are currently experiencing multiple changes including invasion by non-native seaweeds and ocean warming.”
+      <strong>Example 2:</strong>
+      “And: Graceful kelp crabs (Pugettia gracilis) are abundant consumers in shallow subtidal ecosystems experiencing invasion by non-native seaweeds and ocean warming.”
       (Johnson et al., 2023)
       <a href="https://doi.org/10.7717/peerj.15223" target="_blank">[Link]</a>
     </p>
@@ -55,46 +65,46 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   
   <!-- RESEARCH GAP FIELD -->
   <label for="but">
-    Research Gap: 
-    <span class="learnMore" onclick="toggleExample('exampleGap')">Learn More</span>
+    Research Gap (begin with "But:"):
+    <span class="learnMore" onclick="toggleExample('exampleGap')">examples</span>
   </label>
   <div id="exampleGap" class="example" style="display:none; margin:5px 0 10px 20px; border-left: 2px solid #007BFF; padding-left: 10px;">
     <p>
-      <strong>Example 1:</strong> 
-      “However, little is known about P. gracilis’ foraging ecology.”
+      <strong>Example 1:</strong>
+      “But: However, little is known about P. gracilis’ foraging ecology.”
       (Johnson et al., 2023)
       <a href="https://doi.org/10.7717/peerj.15223" target="_blank">[Link]</a>
     </p>
     <p>
-      <strong>Example 2:</strong> 
-      “The anthomedusa Sarsia tubulosa has long been considered a ‘variable’ species, yet recent observations reveal the existence of at least three species.”
+      <strong>Example 2:</strong>
+      “But: The anthomedusa Sarsia tubulosa has long been considered a ‘variable’ species, yet recent observations reveal at least three species.”
       (Miller, R., 1982)
       <a href="https://doi.org/10.1016/0022-0981(82)90089-2" target="_blank">[Link]</a>
     </p>
   </div>
-  <textarea id="but" name="but" placeholder="e.g., leads to ocean acidification, but little is known about species' capacity to evolve in response to pH stress" required></textarea>
+  <textarea id="but" name="but" placeholder="e.g., little is known about species' capacity to evolve in response to pH stress" required></textarea>
   
   <!-- RESEARCH OBJECTIVE FIELD -->
   <label for="therefore">
-    Research Objective: 
-    <span class="learnMore" onclick="toggleExample('exampleObjective')">Learn More</span>
+    Research Objective (begin with "Therefore:"):
+    <span class="learnMore" onclick="toggleExample('exampleObjective')">examples</span>
   </label>
   <div id="exampleObjective" class="example" style="display:none; margin:5px 0 10px 20px; border-left: 2px solid #007BFF; padding-left: 10px;">
     <p>
-      <strong>Example 1:</strong> 
-      “Therefore, we identify climatic drivers of whooping crane recruitment throughout the species’ life cycle.”
+      <strong>Example 1:</strong>
+      “Therefore: We identify climatic drivers of whooping crane recruitment throughout the species’ life cycle.”
       (Butler et al., 2017)
       <a href="https://doi.org/10.1002/ece3.2892" target="_blank">[Link]</a>
     </p>
     <p>
-      <strong>Example 2:</strong> 
-      “Therefore, we investigated their feeding preferences between native and invasive food sources, as well as feeding rates at elevated temperatures.”
+      <strong>Example 2:</strong>
+      “Therefore: We investigated feeding preferences between native and invasive food sources, as well as feeding rates at elevated temperatures.”
       (Johnson et al., 2023)
       <a href="https://doi.org/10.7717/peerj.15223" target="_blank">[Link]</a>
     </p>
     <p>
-      <strong>Example 3:</strong> 
-      “Here, we present a brief observational account of the first‐known record of brooding, development, and hatching of fertilized eggs for O. californicus.”
+      <strong>Example 3:</strong>
+      “Therefore: We present a brief observational account of the first‑known record of brooding, development, and hatching of fertilized eggs for O. californicus.”
       (Khen et al., 2022)
       <a href="https://doi.org/10.1002/ece3.9481" target="_blank">[Link]</a>
     </p>
@@ -103,25 +113,24 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   
   <!-- RESEARCH QUESTION/HYPOTHESES FIELD -->
   <label for="researchQuestion">
-    Research Question/Hypotheses: 
-    <span class="learnMore" onclick="toggleExample('exampleQuestion')">Learn More</span>
+    Research Question/Hypotheses:
+    <span class="learnMore" onclick="toggleExample('exampleQuestion')">examples</span>
   </label>
   <div id="exampleQuestion" class="example" style="display:none; margin:5px 0 10px 20px; border-left: 2px solid #007BFF; padding-left: 10px;">
     <p>
-      <strong>Example 1:</strong> 
+      <strong>Example 1:</strong>
       “What are the feeding preferences of P. gracilis and how do elevated temperatures affect their feeding rates?”
       (Johnson et al., 2023)
       <a href="https://doi.org/10.7717/peerj.15223" target="_blank">[Link]</a>
     </p>
     <p>
-      <strong>Example 2:</strong> 
+      <strong>Example 2:</strong>
       “How does tidal timing during heatwaves affect biodiversity in tidepool communities?”
       (Sanfilippo et al., 2023)
-      <!-- No DOI provided -->
     </p>
     <p>
-      <strong>Example 3:</strong> 
-      “Do deep-sea cephalopods exhibit reproductive aggregations and what role might sexual cannibalism play?”
+      <strong>Example 3:</strong>
+      “Do deep‑sea cephalopods exhibit reproductive aggregations, and what role might sexual cannibalism play?”
       (Vecchione, M., 2019)
       <a href="https://doi.org/10.3389/fmars.2019.00403" target="_blank">[Link]</a>
     </p>
@@ -130,24 +139,23 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   
   <!-- METHODOLOGY/APPROACH FIELD -->
   <label for="methodology">
-    Methodology/Approach (Use present or past tense; avoid “will be”): 
-    <span class="learnMore" onclick="toggleExample('exampleMethodology')">Learn More</span>
+    Methodology/Approach (Use present or past tense; avoid “will be”):
+    <span class="learnMore" onclick="toggleExample('exampleMethodology')">examples</span>
   </label>
   <div id="exampleMethodology" class="example" style="display:none; margin:5px 0 10px 20px; border-left: 2px solid #007BFF; padding-left: 10px;">
     <p>
-      <strong>Example 1:</strong> 
-      “We collected P. gracilis from San Juan Island, WA and conducted no‐choice and choice experiments with two food sources.”
+      <strong>Example 1:</strong>
+      “We collected P. gracilis from San Juan Island, WA and conducted no‑choice and choice experiments with two food sources.”
       (Johnson et al., 2023)
       <a href="https://doi.org/10.7717/peerj.15223" target="_blank">[Link]</a>
     </p>
     <p>
-      <strong>Example 2:</strong> 
+      <strong>Example 2:</strong>
       “We examined how eight tidepools at Friday Harbor Labs were impacted by a four‑day heating event.”
       (Sanfilippo et al., 2023)
-      <!-- Link if available -->
     </p>
     <p>
-      <strong>Example 3:</strong> 
+      <strong>Example 3:</strong>
       “A series of morphological and behavioral observations, coupled with an extensive program of hybridization testing.”
       (Miller, R., 1982)
       <a href="https://doi.org/10.1016/0022-0981(82)90089-2" target="_blank">[Link]</a>
@@ -157,23 +165,23 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   
   <!-- EXPECTED/PRELIMINARY FINDINGS FIELD -->
   <label for="findings">
-    Expected/Preliminary Findings: 
-    <span class="learnMore" onclick="toggleExample('exampleFindings')">Learn More</span>
+    Expected/Preliminary Findings:
+    <span class="learnMore" onclick="toggleExample('exampleFindings')">examples</span>
   </label>
   <div id="exampleFindings" class="example" style="display:none; margin:5px 0 10px 20px; border-left: 2px solid #007BFF; padding-left: 10px;">
     <p>
-      <strong>Example 1:</strong> 
-      “In no‐choice experiments, P. gracilis ate equal amounts of native kelp and invasive seaweed; in choice experiments, P. gracilis preferred native kelp. Crabs exposed to elevated temperatures ate significantly more.”
+      <strong>Example 1:</strong>
+      “In no‑choice experiments, P. gracilis ate equal amounts of native kelp and invasive seaweed; in choice experiments, they preferred native kelp. Crabs exposed to elevated temperatures ate significantly more.”
       (Johnson et al., 2023)
       <a href="https://doi.org/10.7717/peerj.15223" target="_blank">[Link]</a>
     </p>
     <p>
-      <strong>Example 2:</strong> 
+      <strong>Example 2:</strong>
       “Biodiversity did not change significantly over time in tidepools that remained submerged during the heatwave.”
       (Sanfilippo et al., 2023)
     </p>
     <p>
-      <strong>Example 3:</strong> 
+      <strong>Example 3:</strong>
       “The incubation time was a maximum of 10 months at 8–10°C and embryos hatched over a period of 2.5 months.”
       (Khen et al., 2022)
       <a href="https://doi.org/10.1002/ece3.9481" target="_blank">[Link]</a>
@@ -183,25 +191,25 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   
   <!-- IMPLICATIONS FIELD -->
   <label for="implications">
-    Implications: 
-    <span class="learnMore" onclick="toggleExample('exampleImplications')">Learn More</span>
+    Implications:
+    <span class="learnMore" onclick="toggleExample('exampleImplications')">examples</span>
   </label>
   <div id="exampleImplications" class="example" style="display:none; margin:5px 0 10px 20px; border-left: 2px solid #007BFF; padding-left: 10px;">
     <p>
-      <strong>Example 1:</strong> 
-      “We predicted whooping crane recruitment and population growth may fall below long‐term averages under increased CO₂, indicating that species recovery may require eight times longer.”
+      <strong>Example 1:</strong>
+      “We predicted whooping crane recruitment and population growth may fall below long‑term averages under increased CO₂, indicating that species recovery may require eight times longer.”
       (Butler et al., 2017)
       <a href="https://doi.org/10.1002/ece3.2892" target="_blank">[Link]</a>
     </p>
     <p>
-      <strong>Example 2:</strong> 
+      <strong>Example 2:</strong>
       “Warming ocean temperatures may prompt P. gracilis to increase feeding, exacerbating harmful impacts on native kelp.”
       (Johnson et al., 2023)
       <a href="https://doi.org/10.7717/peerj.15223" target="_blank">[Link]</a>
     </p>
     <p>
-      <strong>Example 3:</strong> 
-      “These observations may indicate a deep-sea spawning aggregation and potentially sexual cannibalism, offering insights into cephalopod reproduction.”
+      <strong>Example 3:</strong>
+      “These observations may indicate a deep‑sea spawning aggregation and potentially sexual cannibalism, offering insights into cephalopod reproduction.”
       (Vecchione, M., 2019)
       <a href="https://doi.org/10.3389/fmars.2019.00403" target="_blank">[Link]</a>
     </p>
@@ -221,7 +229,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
 <!-- Additional Instructions and Guidelines Below the Generator -->
 <h2>Story Structure: And, But, Therefore</h2>
 <p>
-When drafting your abstract, use the following structure to present your research clearly and logically:
+When drafting your abstract, use the following structure to present your research clearly and logically. (Note: The first word in each of these segments serves as a hook.)
 </p>
 <ul>
   <li><strong>And:</strong> State an established fact or background information.
@@ -311,33 +319,48 @@ Use this structure as a guide to create a compelling narrative that logically co
   }
   
   function generateAbstract() {
-    const title = document.getElementById('title').value.trim();
-    const andText = document.getElementById('and').value.trim();
-    const butText = document.getElementById('but').value.trim();
-    const thereforeText = document.getElementById('therefore').value.trim();
-    const researchQuestion = document.getElementById('researchQuestion').value.trim();
-    const methodology = document.getElementById('methodology').value.trim();
-    const findings = document.getElementById('findings').value.trim();
-    const implications = document.getElementById('implications').value.trim();
+    // Retrieve field values.
+    const titleField = document.getElementById('title').value.trim();
+    
+    // For the following fields, if the text doesn't already start with the appropriate keyword, prefix it.
+    let bgText = document.getElementById('and').value.trim();
+    if (!bgText.toLowerCase().startsWith("and:")) {
+      bgText = "And: " + bgText;
+    }
+    
+    let gapText = document.getElementById('but').value.trim();
+    if (!gapText.toLowerCase().startsWith("but:")) {
+      gapText = "But: " + gapText;
+    }
+    
+    let objText = document.getElementById('therefore').value.trim();
+    if (!objText.toLowerCase().startsWith("therefore:")) {
+      objText = "Therefore: " + objText;
+    }
+    
+    const rqText = document.getElementById('researchQuestion').value.trim();
+    const methText = document.getElementById('methodology').value.trim();
+    const findingsText = document.getElementById('findings').value.trim();
+    const implText = document.getElementById('implications').value.trim();
     
     let warnings = "";
-    if (!isTitleCase(title)) {
+    if (!isTitleCase(titleField)) {
       warnings += "Warning: Title is not in title case.\n";
     }
     
-    // Build abstract without auto‑inserting punctuation.
-    let plainAbstract = title + "\n\n" + andText + " " + butText + " " + researchQuestion + " " + thereforeText + " " + methodology + " " + findings + " " + implications;
+    // Build the final abstract by concatenating fields (without auto‑inserting extra punctuation).
+    let plainAbstract = titleField + "\n\n" + bgText + " " + gapText + " " + rqText + " " + objText + " " + methText + " " + findingsText + " " + implText;
     plainAbstract = plainAbstract.replace(/\s+/g, ' ').trim();
     
-    // Build highlighted abstract with spans for each segment.
-    let highlightedAbstract = title + "<br><br>";
-    highlightedAbstract += "<span class='segment and-seg' title='Background/Context'>" + andText + "</span> ";
-    highlightedAbstract += "<span class='segment but-seg' title='Research Gap'>" + butText + "</span> ";
-    highlightedAbstract += "<span class='segment rq-seg' title='Research Question/Hypotheses'>" + researchQuestion + "</span> ";
-    highlightedAbstract += "<span class='segment therefore-seg' title='Research Objective'>" + thereforeText + "</span> ";
-    highlightedAbstract += "<span class='segment methodology-seg' title='Methodology/Approach'>" + methodology + "</span> ";
-    highlightedAbstract += "<span class='segment findings-seg' title='Expected/Preliminary Findings'>" + findings + "</span> ";
-    highlightedAbstract += "<span class='segment implications-seg' title='Implications'>" + implications + "</span>";
+    // Build a highlighted version.
+    let highlightedAbstract = titleField + "<br><br>";
+    highlightedAbstract += "<span class='segment and-seg' title='Background/Context'>" + bgText + "</span> ";
+    highlightedAbstract += "<span class='segment but-seg' title='Research Gap'>" + gapText + "</span> ";
+    highlightedAbstract += "<span class='segment rq-seg' title='Research Question/Hypotheses'>" + rqText + "</span> ";
+    highlightedAbstract += "<span class='segment therefore-seg' title='Research Objective'>" + objText + "</span> ";
+    highlightedAbstract += "<span class='segment methodology-seg' title='Methodology/Approach'>" + methText + "</span> ";
+    highlightedAbstract += "<span class='segment findings-seg' title='Expected/Preliminary Findings'>" + findingsText + "</span> ";
+    highlightedAbstract += "<span class='segment implications-seg' title='Implications'>" + implText + "</span>";
     
     let finalAbstract, finalOutput;
     if (highlightEnabled) {
