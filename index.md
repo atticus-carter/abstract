@@ -1,12 +1,6 @@
----
-layout: default
-title: Abstract Writing Exercise: Crafting Your Research Narrative
----
-
 <div id="instructionsContainer">
 </div>
 
-# Abstract Writing Exercise: Crafting Your Research Narrative
 
 ## Instructions:
 Use this document to help you draft an abstract that meets the following guidelines. Your abstract should be written as a single, cohesive paragraph (300 words or less) that follows the **“And, But, Therefore”** structure to set up your research story.
