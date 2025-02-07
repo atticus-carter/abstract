@@ -524,31 +524,31 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   }
 
   .title-seg {
-    background-color: rgba(201, 161, 229, 0.5); /* #c9a1e5 at 50% transparency */
+    background-color: rgba(255, 158, 158, 0.5); /* #c9a1e5 at 50% transparency */
   }
 
   .and-seg {
-    background-color: rgba(218, 194, 242, 0.5); /* #dac2f2 at 50% transparency */
+    background-color: rgba(255, 213, 158, 0.5); /* #dac2f2 at 50% transparency */
   }
 
   .but-seg {
-    background-color: rgba(144, 217, 130, 0.5); /* #90d982 at 50% transparency */
+    background-color: rgba(255, 247, 158, 0.5); /* #90d982 at 50% transparency */
   }
 
   .therefore-seg {
-    background-color: rgba(66, 166, 66, 0.5); /* #42a642 at 50% transparency */
+    background-color: rgba(203, 255, 158, 0.5); /* #42a642 at 50% transparency */
   }
 
   .methodology-seg {
-    background-color: rgba(165, 105, 157, 0.5); /* #a5699d at 50% transparency */
+    background-color: rgba(158, 247, 255, 0.5); /* #a5699d at 50% transparency */
   }
 
   .findings-seg {
-    background-color: rgba(173, 183, 172, 0.5); /* #adb7ac at 50% transparency */
+    background-color: rgba(224, 158, 255, 0.5); /* #adb7ac at 50% transparency */
   }
 
   .implications-seg {
-    background-color: rgba(122, 140, 108, 0.5); /* #7a8c6c at 50% transparency */
+    background-color: rgba(255, 158, 239, 0.5); /* #7a8c6c at 50% transparency */
   }
 
   .rq-seg {
