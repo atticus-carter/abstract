@@ -5,7 +5,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
 
 <!-- Quick description at the top -->
 <p>
-  Welcome to the Abstract Writing Exercise website. This interactive tool guides you through the “And, But, Therefore” framework to help you craft your research abstract. Remember that an abstract:
+  Welcome to the IBIS Abstract Writing Exercise website. This interactive tool guides you through the “And, But, Therefore” framework to help you craft your research abstract. Remember that an abstract:
 </p>
 <ul>
   <li>Helps readers decide whether to read the full manuscript.</li>
@@ -18,12 +18,13 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
 <form id="abstractForm">
   <!-- TITLE FIELD -->
   <label for="title">
-    Title (in APA title case – suggested cues: "in APA title case – note that minor words such as 'and', 'for', 'of', etc. should be lowercase except when first"):
+    Title (in APA title case): 
     <span class="learnMore" onclick="toggleExample('exampleTitle')">examples and help</span>
   </label>
   <div id="exampleTitle" class="example" style="display:none; margin:5px 0 10px 20px; border-left: 2px solid #9370DB; padding-left: 10px;">
     <p>
       Your title is the hook. Ensure it follows APA title case rules.
+      In APA title case – note that minor words such as 'and', 'for', 'of', etc. should be lowercase except when first
     </p>
     <p>
       “Are Whooping Cranes Destined for Extinction? Climate Change Imperils Recruitment and Population Growth”  
@@ -44,7 +45,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   
   <!-- BACKGROUND/CONTEXT FIELD -->
   <label for="and">
-    Background/Context (suggested cue: "And:")<br>
+    Background/Context: 
     <span class="learnMore" onclick="toggleExample('exampleBackground')">examples and help</span>
   </label>
   <div id="exampleBackground" class="example" style="display:none; margin:5px 0 10px 20px; border-left: 2px solid #9370DB; padding-left: 10px;">
@@ -76,7 +77,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   
   <!-- RESEARCH GAP FIELD -->
   <label for="but">
-    Research Gap (suggested cue: "But:" – note: alternatives like "Yet:" or "However:" are acceptable)<br>
+    Research Gap:
     <span class="learnMore" onclick="toggleExample('exampleGap')">examples and help</span>
   </label>
   <div id="exampleGap" class="example" style="display:none; margin:5px 0 10px 20px; border-left: 2px solid #9370DB; padding-left: 10px;">
@@ -108,7 +109,7 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   
   <!-- RESEARCH OBJECTIVE FIELD -->
   <label for="therefore">
-    Research Objective (suggested cue: "Therefore:" – note: you may also use "Thus:" or "Consequently:")<br>
+    Research Objective: 
     <span class="learnMore" onclick="toggleExample('exampleObjective')">examples and help</span>
   </label>
   <div id="exampleObjective" class="example" style="display:none; margin:5px 0 10px 20px; border-left: 2px solid #9370DB; padding-left: 10px;">
@@ -176,12 +177,12 @@ title: "Abstract Writing Exercise: Crafting Your Research Narrative"
   
   <!-- METHODOLOGY/APPROACH FIELD -->
   <label for="methodology">
-    Methodology/Approach (Use present or past tense; avoid “will be”):
+    Methodology/Approach:
     <span class="learnMore" onclick="toggleExample('exampleMethodology')">examples and help</span>
   </label>
   <div id="exampleMethodology" class="example" style="display:none; margin:5px 0 10px 20px; border-left: 2px solid #9370DB; padding-left: 10px;">
     <p>
-      Describe the methods, measurements, tools, and sampling details. Be as specific as necessary.
+      Describe the methods, measurements, tools, and sampling details. Be as specific as necessary. (Use present or past tense; avoid “will be”)
     </p>
     <p>
       “We collected P. gracilis from San Juan Island, WA and conducted no‑choice and choice experiments with two food sources.”  
